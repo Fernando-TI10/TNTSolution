@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNTSolution - Inovação e Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Incluindo o CSS aqui para facilitar a visualização em um único arquivo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            /* MUDANÇA AQUI: Cor de fundo para combinar com o logo */
+            background-color: #2c3a47; /* Cor escura que combina com o logo */
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        header .logo img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff; /* MUDANÇA AQUI: Cor do texto do menu para branco */
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; /* Continua azul ao passar o mouse */
+        }
+
+        /* ... restante do CSS permanece o mesmo ... */
+
+        section {
+            padding: 60px 0;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #e9ecef;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+        }
+
+        h3 {
+            color: #0056b3;
+            margin-top: 30px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        ul.service-list, ul.project-list {
+            list-style: none;
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        ul.service-list li, ul.project-list li {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo TNTSolution">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#projetos">Projetos Especiais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h1>TNTSolution: Inovação e Soluções Tecnológicas para um Futuro Conectado</h1>
+            <p style="text-align: center; font-size: 1.2em; max-width: 800px; margin: 20px auto;">
+                Sua parceira estratégica em tecnologia, desenvolvendo soluções que impulsionam o seu negócio e transformam a educação.
+            </p>
+        </section>
+
+        <section id="sobre-nos" class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na TNTSolution, somos apaixonados por tecnologia e dedicados a transformar ideias em realidade. Somos uma empresa de TI especializada na **elaboração de sistemas e aplicativos personalizados**, desenvolvendo soluções sob medida que impulsionam a eficiência e o crescimento do seu negócio.</p>
+            <p>Mas nossa expertise vai além do código. Acreditamos no poder da tecnologia para educar e incluir. Por isso, somos pioneiros na **criação e implementação de projetos de Salas Makers**, espaços inovadores que fomentam a criatividade, o aprendizado prático e o desenvolvimento de novas habilidades.</p>
+            <p>Além disso, a TNTSolution está comprometida com a **tecnologia inclusiva**. Desenvolvemos e aplicamos soluções que garantem o acesso e a usabilidade para todos, promovendo um ambiente digital mais equitativo e acessível.</p>
+        </section>
+
+        <section id="servicos" class="container">
+            <h2>Nossos Serviços</h2>
+            <ul class="service-list">
+                <li>
+                    <h3>Desenvolvimento de Sistemas Personalizados</h3>
+                    <p>Criação de sistemas de gestão, CRM, ERP e outras plataformas web/desktop que se adequam perfeitamente aos processos e necessidades específicas da sua empresa.</p>
+                </li>
+                <li>
+                    <h3>Criação de Aplicativos Mobile</h3>
+                    <p>Desenvolvimento de aplicativos nativos para iOS e Android, com interfaces intuitivas e funcionalidades robustas para alcançar seus clientes onde eles estiverem.</p>
+                </li>
+                <li>
+                    <h3>Consultoria em TI Estratégica</h3>
+                    <p>Orientação especializada para otimização de infraestrutura, segurança da informação, migração para nuvem e implementação de novas tecnologias que impulsionam seu negócio.</p>
+                </li>
+                <li>
+                    <h3>Manutenção e Suporte Técnico</h3>
+                    <p>Garantia de funcionamento contínuo dos seus sistemas e aplicativos, com suporte proativo e reativo para resolver qualquer questão técnica rapidamente.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="container">
+            <h2>Projetos Especiais</h2>
+            <ul class="project-list">
+                <li>
+                    <h3>Salas Makers: Criatividade e Inovação</h3>
+                    <p>Planejamento e design de espaços makers educativos e corporativos. Fornecimento de equipamentos como impressoras 3D, kits de robótica, ferramentas de prototipagem e capacitação para professores e usuários.</p>
+                </li>
+                <li>
+                    <h3>Tecnologia Inclusiva: Acessibilidade para Todos</h3>
+                    <p>Desenvolvimento de interfaces e soluções digitais acessíveis, consultoria para adequação de plataformas às normas de acessibilidade e criação de ferramentas que promovem a inclusão digital.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p style="text-align: center; margin-top: 30px;">
+                Ou entre em contato diretamente: <br>
+                Telefone: (XX) XXXX-XXXX <br>
+                E-mail: contato@tntsolution.com
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TNTSolution. Todos os direitos reservados.</p>
+            <div class="social-links" style="margin-top: 15px;">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn" style="vertical-align: middle; margin-right: 5px;"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" style="vertical-align: middle; margin-right: 5px;"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" style="vertical-align: middle;"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

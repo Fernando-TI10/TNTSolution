@@ -1,190 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TNTSolution - Inovação em Tecnologia e Inclusão</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background-color: #f4f6f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #004080, #0066cc);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: #002e5b;
-    }
-    nav a {
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #0050b3;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #004080;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    .service {
-      background-color: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .service:hover {
-      transform: translateY(-5px);
-    }
-    .service h3 {
-      color: #003366;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-    form {
-      background-color: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #004080;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background-color: #003060;
-    }
-    footer {
-      background-color: #002e5b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNTSolution - Tecnologia Inclusiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>TNTSolution</h1>
-    <p>Transformando ideias em soluções tecnológicas inclusivas</p>
-  </header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="tnt">TNT</span><span class="solution">Solution</span>
+                <p class="slogan">TECNOLOGIA INCLUSIVA</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-  </nav>
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Tecnologia que Entende. Tecnologia que Inclui.</h1>
+            <p>Desenvolvemos soluções digitais com foco em acessibilidade e neurodiversidade. Seu projeto é único, e a inclusão é nosso código.</p>
+            <a href="#solucoes" class="btn-principal">Explore Nossas Soluções</a>
+        </div>
+    </section>
 
-  <div class="container" id="sobre">
-    <h2>Sobre a TNTSolution</h2>
-    <p>Somos uma empresa de tecnologia comprometida com a inovação, acessibilidade e transformação digital. Atuamos com foco em resultados concretos, oferecendo soluções que alinham alto desempenho técnico, segurança da informação e tecnologias inclusivas que atendem às mais diversas necessidades do mercado.</p>
-  </div>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>🧩 Nossa Missão</h2>
+            <div class="missao-texto">
+                <p>A **TNTSolution** nasceu com o propósito de quebrar barreiras digitais. Acreditamos que a tecnologia deve ser acessível a todos, independentemente de suas habilidades ou neurodiversidade.</p>
+                <p>Utilizamos a metodologia de Design Universal para garantir que cada interface seja intuitiva, funcional e acolhedora, transformando desafios em oportunidades de conexão.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="container" id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Suporte Técnico</h3>
-        <p>Manutenção preventiva e corretiva, atendimento remoto e presencial com agilidade e expertise.</p>
-      </div>
-      <div class="service">
-        <h3>Infraestrutura de Redes</h3>
-        <p>Projetos de rede LAN/WAN, cabeamento estruturado, segurança e desempenho otimizados.</p>
-      </div>
-      <div class="service">
-        <h3>Computação em Nuvem</h3>
-        <p>Migração, backup e gestão de ambientes em nuvem com escalabilidade e segurança.</p>
-      </div>
-      <div class="service">
-        <h3>Segurança da Informação</h3>
-        <p>LGPD, análise de riscos, firewall, antivírus corporativo e continuidade dos negócios.</p>
-      </div>
-      <div class="service">
-        <h3>Desenvolvimento de Sistemas</h3>
-        <p>Criação de plataformas e aplicativos sob medida, com integração de serviços e automação.</p>
-      </div>
-      <div class="service">
-        <h3>Softwares Inclusivos</h3>
-        <p>Soluções digitais acessíveis voltadas à educação inclusiva e usabilidade para todos.</p>
-      </div>
-      <div class="service">
-        <h3>Virtualização e Servidores</h3>
-        <p>Infraestrutura virtual, implantação e gestão de servidores físicos e virtuais.</p>
-      </div>
-      <div class="service">
-        <h3>Salas Maker</h3>
-        <p>Projetos completos de ambientes tecnológicos adaptados para a aprendizagem criativa e inclusiva.</p>
-      </div>
-      <div class="service">
-        <h3>Capacitação Profissional</h3>
-        <p>Formações, oficinas e treinamentos personalizados para equipes técnicas e operacionais.</p>
-      </div>
-    </div>
-  </div>
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <h2>Serviços Focados em Inclusão</h2>
+            <div class="cards">
+                <div class="card card-azul">
+                    <h3>Consultoria em Acessibilidade</h3>
+                    <p>Auditoria completa e implementação das diretrizes WCAG e leis de inclusão digital no seu produto.</p>
+                </div>
+                <div class="card card-verde">
+                    <h3>Desenvolvimento Neurodivergente</h3>
+                    <p>Criação de interfaces com foco em clareza, previsibilidade e mínima distração para todos os usuários.</p>
+                </div>
+                <div class="card card-amarelo">
+                    <h3>Treinamento e Capacitação</h3>
+                    <p>Cursos para equipes de desenvolvimento e design sobre como construir um futuro digital mais inclusivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="container" id="contato">
-    <h2>Fale Conosco</h2>
-    <form action="https://formsubmit.co/fernando.projetoti@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" rows="6" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar Mensagem</button>
-    </form>
-  </div>
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Vamos Construir Juntos?</h2>
+            <p>Preencha o formulário abaixo e descubra como a tecnologia inclusiva pode transformar sua empresa.</p>
+            
+            <form action="https://formsubmit.co/fernando.projetoti@gmail.com" method="POST" class="form-contato">
+                
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="Nome" id="nome" placeholder="Seu nome ou nome da empresa" required>
+                
+                <label for="email">Seu Melhor E-mail:</label>
+                <input type="email" name="Email" id="email" placeholder="email@exemplo.com" required>
+                
+                <label for="assunto">Assunto:</label>
+                <input type="text" name="_subject" id="assunto" placeholder="Ex: Consultoria em Acessibilidade">
 
-  <footer>
-    <p>&copy; 2025 TNTSolution. Todos os direitos reservados.</p>
-  </footer>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="Mensagem" id="mensagem" rows="5" placeholder="Descreva brevemente o seu projeto ou dúvida..." required></textarea>
+                
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="btn-principal">Enviar Mensagem</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TNTSolution. Tecnologia Inclusiva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

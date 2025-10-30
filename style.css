@@ -1,0 +1,301 @@
+/* Definição da Paleta de Cores e Fontes */
+:root {
+    --cor-primaria: #38B44A; /* Verde do logo */
+    --cor-secundaria: #0072BB; /* Azul do logo/destaque */
+    --cor-acento: #FBB03B; /* Amarelo/Laranja do logo */
+    --cor-inclusiva: #ED1C24; /* Vermelho do logo */
+    --cor-fundo: #FFFFFF;
+    --cor-texto: #333333;
+    --cor-fundo-secundario: #f4f4f4;
+    --font-principal: 'Poppins', sans-serif;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-principal);
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header e Navegação --- */
+header {
+    background-color: var(--cor-fundo);
+    border-bottom: 3px solid var(--cor-secundaria);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .tnt {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.logo .solution {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
+.logo .slogan {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--cor-texto);
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Botão de Contato na Navegação */
+.btn-contato {
+    background-color: var(--cor-inclusiva);
+    color: var(--cor-fundo) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #c9171e; /* Tom mais escuro do vermelho */
+}
+
+/* --- Botão Principal (Usado em Hero e no Form) --- */
+.btn-principal {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo) !important;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* --- Seção Hero (Destaque) --- */
+#hero {
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 5px solid var(--cor-acento);
+}
+
+#hero h1 {
+    font-size: 2.8em;
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+/* --- Seções de Conteúdo --- */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Seção Sobre Nós */
+#sobre .missao-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sobre p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* --- Seção Soluções (Cards) --- */
+#solucoes {
+    background-color: var(--cor-fundo-secundario);
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card-azul {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+}
+
+.card-verde {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.card-amarelo {
+    background-color: var(--cor-acento);
+    color: var(--cor-texto);
+}
+
+/* --- Seção Contato (Formulário) --- */
+#contato {
+    text-align: center;
+}
+
+#contato p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 30px;
+    background-color: var(--cor-fundo-secundario);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Alinha os campos à esquerda */
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: var(--font-principal);
+    transition: border-color 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 180, 74, 0.2); /* Sombra suave com a cor verde */
+}
+
+.form-contato textarea {
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+/* Garante que o botão use a cor de destaque e ocupe 100% da largura do form */
+.form-contato .btn-principal {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    /* Sobrescreve o margin-top do .btn-principal padrão para encaixar melhor no form */
+    margin-top: 25px; 
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 100%;
+    }
+    #hero h1 {
+        font-size: 2em;
+    }
+}
